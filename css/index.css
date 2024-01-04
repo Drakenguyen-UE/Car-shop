@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Potta One;
+    src: url(../font/PottaOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Potta One;
+    font-size: 1,25em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #312424;
+    background-color: #ffffff;
+    cursor: url(../images/Pagani_Zonda_Cursor.png), default;
+}
+
+header {
+    text-align: center;
+    padding: 16px 0;
+    color: #ffffff;
+    background-color: rgb(11, 235, 160);
+}
+
+.container {
+    display: flex;
+    min-height: 75vh;
+}
+
+aside {
+    padding: 24px 32px;
+}
+
+.menu {
+    position: sticky;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.vr {
+    width: 5px;
+    background-color: rgb(11, 235, 160);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0;
+    color: #faf8f8;
+    background-color: #312424;
+}

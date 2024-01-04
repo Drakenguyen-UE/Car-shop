@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <title>Carshop: accessory-details</title>
+        <link type="image/png" sizes="32x32" rel="icon" href="../images/icons8-car-32.png">
+        <link rel="stylesheet" href="../css/accessory-details.css">
+    </head>
+    <body>
+        <header>
+            <h1>AUTOMOTIVE REPAIR</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <div class="menu">
+                    <p><b>MENU:</b></p>
+                    <p><a href="./addnewcar.html">Add a new car</a></p>
+                    <p><a href="./carsmanagement.html">Car management</a></p>
+                </div>
+            </aside>
+            <div class="vr"></div>
+            <main>
+                <form id="accessory-form">
+                    <p><b>ACCESSORY DETAILS:</b></p>
+                    <div class="form-control">
+                        <label for="ide">ID</label>
+                        <input type="text" name="id" id="id" placeholder="1" required disabled>
+                    </div>
+                    <div class="form-control">
+                        <label for="license-plate">License plate</label>
+                        <input type="text" name="license-plate" id="license-plate" placeholder="30H-666.66" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="repair-date">Repair date</label>
+                        <input type="date" name="repair-date" id="repair-date" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Lọc gió" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="price">Price</label>
+                        <input type="numbert" name="price" id="price" placeholder="100000" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="status-damaged">Status damaged</label>
+                        <input type="text" name="status-damaged" id="status-damaged" placeholder="Bị bụi bẩn" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="repair-status">Repair status</label>
+                        <input type="text" name="repair-status" id="repair-status" placeholder="Làm sạch" required>
+                    </div>
+                    <div class="form-submit">
+                        <div>
+                            <input type="submit" value="Save Accessory" >
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+                <div class="data">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>License plate</th>
+                                    <th>Repair date</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Status damaged</th>
+                                    <th>Repair status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accessories"></tbody>
+                        </table>
+                    </div>
+                    <div id="loading">
+                        <div class="loading-icon"></div>
+                    </div>
+                </div>
+        </main>
+        </div>
+        <footer><i>BASED ON SPRING FRAMEWORK</i></footer>
+        <script src="../js/accessory-details.js"></script>
+    </body>
+</html>

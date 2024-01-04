@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Potta One;
+    src: url(../font/PottaOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Potta One;
+    font-size: 1,25em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #312424;
+    background-color: #ffffff;
+    cursor: url(../images/Pagani_Zonda_Cursor.png), default;
+
+}
+
+header {
+    text-align: center;
+    padding: 16px 0;
+    color: #ffffff;
+    background-color: rgb(11, 235, 160);
+}
+
+.container {
+    display: flex;
+    min-height: 75vh;
+}
+
+aside {
+    padding: 24px 32px;
+}
+
+.menu {
+    position: sticky;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.vr {
+    width: 5px;
+    background-color: rgb(11, 235, 160);
+}
+
+main {
+    flex: 1;
+    padding: 24px 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 560px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label::after {
+    content: " *";
+    color: red;
+}
+
+.form-control input {
+    height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 8px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-submit input {
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.table-container {
+    margin-top: 24px;
+    max-height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #d3d3d3;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
+}
+
+th, td {
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 4px 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+tbody tr:hover {
+    background-color: #dddddd;
+}
+
+td button {
+    padding: 4px 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+.data {
+    position: relative;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-icon {
+    width: 32px;
+    height: 32px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: darkcyan transparent;
+    border-radius: 50%;
+    animation: rotate 400ms linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0;
+    color: #faf8f8;
+    background-color: #312424;
+}
